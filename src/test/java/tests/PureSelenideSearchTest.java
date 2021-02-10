@@ -1,3 +1,5 @@
+package tests;
+
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

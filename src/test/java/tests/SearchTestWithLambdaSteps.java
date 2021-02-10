@@ -1,3 +1,5 @@
+package tests;
+
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -25,7 +27,7 @@ public class SearchTestWithLambdaSteps {
     @Test
     @Owner("akiselef")
     @Severity(SeverityLevel.CRITICAL)
-    @Tags({@Tag("demo"), @Tag("web")})
+    @Tags({@Tag("demo"), @Tag("web"), @Tag("lambdas")})
     @Link(name = "Github Main Page", value = BASE_URL)
     @Feature("Issues check")
     @Story("ZG-1337")
@@ -58,7 +60,7 @@ public class SearchTestWithLambdaSteps {
     @Test
     @Owner("akiselef")
     @Severity(SeverityLevel.CRITICAL)
-    @Tags({@Tag("demo"), @Tag("web"), @Tag("Failed_on_purpose")})
+    @Tags({@Tag("demo"), @Tag("web"), @Tag("Failed_on_purpose"), @Tag("lambdas")})
     @Link(name = "Github Main Page", value = BASE_URL)
     @Feature("Issues check")
     @Story("ZG-1338")
