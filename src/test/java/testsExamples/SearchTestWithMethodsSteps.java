@@ -1,4 +1,4 @@
-package tests;
+package testsExamples;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import steps.BaseSteps;
+import testSteps.BaseSteps;
 
 import static io.qameta.allure.Allure.parameter;
 

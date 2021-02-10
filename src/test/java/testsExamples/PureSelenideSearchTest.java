@@ -1,13 +1,13 @@
-package tests;
+package testsExamples;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -32,7 +32,7 @@ public class PureSelenideSearchTest {
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(REPO);
         $(".header-search-input").submit();
-        $(By.linkText(REPO)).click();
+        $(byLinkText(REPO)).click();
         $(withText("Issues")).click();
         $(withText(ISSUE_NUMBER)).should(exist);
 

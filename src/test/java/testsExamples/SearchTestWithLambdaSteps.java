@@ -1,4 +1,4 @@
-package tests;
+package testsExamples;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
