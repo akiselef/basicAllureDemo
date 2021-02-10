@@ -11,6 +11,7 @@ import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.parameter;
 import static io.qameta.allure.Allure.step;
 
 public class SearchTestWithLambdaSteps {
@@ -31,6 +32,9 @@ public class SearchTestWithLambdaSteps {
     @DisplayName("Search for issue by it's number (/w lambdas)")
     void lambdasSearchForIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+
+        parameter("Repo",REPO);
+        parameter("Issue Number", ISSUE_NUMBER);
 
         step("Opening github main page", () -> {
             open(BASE_URL);
@@ -61,6 +65,9 @@ public class SearchTestWithLambdaSteps {
     @DisplayName("Failed test (I did it for the science!)")
     void lambdasFailedTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+
+        parameter("Repo",REPO);
+        parameter("Issue Number", ISSUE_NUMBER);
 
         step("Opening github main page", () -> {
             open(BASE_URL);
